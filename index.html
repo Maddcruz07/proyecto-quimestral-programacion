@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas Animadas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header con la introducción animada -->
+    <header>
+        <div class="intro">
+            <h1>Bienvenido al Juego de Cartas</h1>
+            <button id="startBtn">Comenzar</button>
+        </div>
+    </header>
+
+    <!-- Main con el contenedor de cartas animadas -->
+    <main id="game" style="display: none;">
+        <div class="cards-container">
+            <!-- Cada carta tiene frente y reverso -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <span class="emoji">😀</span>
+                        <p>Feliz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                    </div>
+                    <div class="card-back">
+                        <span class="emoji">😎</span>
+                        <p>Cool</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                    </div>
+                    <div class="card-back">
+                        <span class="emoji">😂</span>
+                        <p>Riendo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script de la página -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</body>
+</html>
+
